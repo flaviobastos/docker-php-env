@@ -23,7 +23,7 @@ services:
         volumes:
             - .:/var/www/html
         depends_on:
-            - database
+            - mariadb
         networks:
             - app_network
 
@@ -62,4 +62,5 @@ networks:
     app_network:
         driver: bridge
         name: app_network
+
 
