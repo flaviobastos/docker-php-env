@@ -1,5 +1,5 @@
 services:
-    database:
+    mariadb:
         image: mariadb:latest
         container_name: mariadb
         restart: always
@@ -62,3 +62,4 @@ networks:
     app_network:
         driver: bridge
         name: app_network
+
