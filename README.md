@@ -29,7 +29,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 :bulb: <u>Opens an interactive shell inside the running PHP container:</u>
 
 ```bash
-docker compose exec -it php sh
+docker compose exec php sh
 ```
 
 <hr>
@@ -45,7 +45,7 @@ composer create-project laravel/laravel example-app
 :bulb: <u>Starts a temporary Node container with port 5173 exposed and opens an interactive shell:</u>
 
 ```bash
-docker compose run --rm -it -p 5173:5173 node sh
+docker compose run --rm -p 5173:5173 node sh
 ```
 
 <hr>
