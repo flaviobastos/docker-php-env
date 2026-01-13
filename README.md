@@ -13,6 +13,17 @@ docker run -d --rm --name phpmyadmin --network app_network -p 8080:80 -e PMA_HOS
 docker run -d --rm -p 8025:8025 -p 1025:1025 --name mailpit axllent/mailpit
 ```
 
+```bash
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="no-reply@localhost"
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
 <hr>
 
 :bulb: <u>Opens an interactive shell inside the running PHP container:</u>
